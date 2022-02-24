@@ -1,7 +1,7 @@
 # Predicting-Cancer-using-Random-Forest
 - Predicting type of cell, whether it is benign or malignant and explain the prediction using SHAP.
 - The dataset can be loaded using this link: https://raw.githubusercontent.com/dphi-official/Datasets/master/breast_cancer/Training_set_breastcancer.csv
-- The predictive model used is Random Forest with minor estimator tweak which give an accuracy of 96%.
+- The predictive model used is Random Forest with minor tweak which give an accuracy of 96%.
 - Using SHAP to create force plot to visualize how does the model make prediction.
 - Created summary plot to identify the most importance variables
 - Created dependency plot to visualize the dependecy of 2 variables in making prediction.
@@ -26,3 +26,20 @@ Other 20 features contain information about following 10 real valued features
 - concave points (number of concave portions of the contour)
 - symmetry
 - fractal dimension ("coastline approximation" - 1)
+
+## EDA
+For EDA, I have performed several things:
+- Get the summary statistics.
+- Make barplot for the diagnosis variable.
+- Created histogram for each of the independant variable.
+
+## Model building
+- To build the model, I have split the dataset into training and test dataset with ratio of 80:20.
+- I have used Random Forest with parameters of:
+    - Number of estimators = 200
+    - Criterion = Gini
+    - Class weight = balanced_subsample
+    - max_features = auto
+
+## Model performance
+The Random Forest achieve accuracy prediction of 96%.
