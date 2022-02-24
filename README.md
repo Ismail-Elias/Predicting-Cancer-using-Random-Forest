@@ -43,3 +43,9 @@ For EDA, I have performed several things:
 
 ## Model performance
 The Random Forest achieve accuracy prediction of 96%.
+
+## SHAP implementation
+Using SHAP package, I explained the prediction made by the model using:
+   - Force plot
+   - Summary plot
+   - Dependency plot 
